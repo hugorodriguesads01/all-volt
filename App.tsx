@@ -16,10 +16,13 @@ const App: React.FC = () => {
     <div className="bg-black min-h-screen text-white font-mono selection:bg-white/20 overflow-x-hidden">
       <Navbar />
       
-      {/* 1) Headline + Promessa (Sticky) */}
+      {/* 1) Headline + Promessa (Fixed for Parallax Effect) */}
       <Hero />
       
-      {/* Wrapper to slide over the Hero */}
+      {/* Spacer to push the scrolling content down, creating room for the fixed Hero */}
+      <div className="h-[100svh]"></div>
+
+      {/* Wrapper for all other sections, which will scroll over the Hero */}
       <div className="relative z-10 bg-black shadow-[0_-50px_100px_-20px_rgba(0,0,0,1)]">
         {/* 2) Benefícios (Glass Blocks) */}
         <GridFeatures />

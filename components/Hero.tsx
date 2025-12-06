@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export const Hero: React.FC = () => {
   return (
     <section 
-      className="sticky top-0 h-[100svh] w-full flex flex-col justify-center overflow-hidden bg-background pt-20 pb-12 md:pt-0 md:pb-0"
+      className="fixed inset-0 z-0 h-[100svh] w-full flex flex-col justify-center overflow-hidden bg-background pt-20 pb-12 md:pt-0 md:pb-0"
     >
       {/* Background Effect - WebGL Shader */}
       <WebGLShader className="opacity-80" />
