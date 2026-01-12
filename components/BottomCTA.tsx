@@ -4,25 +4,26 @@ import { motion } from 'framer-motion';
 
 export const BottomCTA: React.FC = () => {
   return (
-    <section className="relative py-24 overflow-hidden">
-      {/* Background Image Layer - Adjusted brightness to match GridFeatures */}
+    <section className="relative py-12 md:py-24 overflow-hidden">
+      {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
           <img 
-              src="https://images.unsplash.com/photo-1558402529-d2638a7023e9?q=80&w=2070&auto=format&fit=crop" 
+              src="https://i.imgur.com/vpDqV33.jpeg" 
               alt="Background CTA" 
-              className="w-full h-full object-cover opacity-60"
+              className="w-full h-full object-cover opacity-40 md:opacity-60"
+              style={{ objectPosition: 'center' }}
           />
-          {/* Gradient Shadow adjusted for clarity (via-transparent) */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#242424]/80 via-transparent to-[#242424]/90"></div>
+          {/* Gradient Shadow adjusted for clarity - using darker background color for blending */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#242424]/90 via-[#242424]/20 to-[#242424]/90"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 relative z-10 flex justify-center">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative rounded-3xl overflow-hidden text-center py-20 px-6 border border-white/10 shadow-2xl bg-white/5 backdrop-blur-xl"
+          className="relative rounded-3xl overflow-hidden text-center py-16 md:py-20 px-6 border border-white/10 shadow-2xl bg-white/5 backdrop-blur-xl w-full md:max-w-3xl"
         >
           
           {/* Glowing Border Effect added to the main block */}
@@ -47,7 +48,7 @@ export const BottomCTA: React.FC = () => {
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-3xl md:text-5xl font-sans font-light text-white mb-6 drop-shadow-lg"
+              className="text-2xl md:text-5xl font-sans font-light text-white mb-6 drop-shadow-lg"
             >
               Explique o que precisa
             </motion.h2>
