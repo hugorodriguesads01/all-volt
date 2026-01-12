@@ -14,12 +14,12 @@ export const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-xl border-b border-white/10 supports-[backdrop-filter]:bg-black/20">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo - Icon Only - Added shrink-0 to prevent flex compression */}
-        <div className="flex items-center gap-3 shrink-0">
+        {/* Logo - Icon Only */}
+        <div className="flex items-center gap-3">
           <img 
             src="https://i.imgur.com/4SMTQ5h.png" 
             alt="Eletroprime Logo" 
-            className="h-10 w-auto object-contain" 
+            className="h-10 w-auto" 
           />
         </div>
 
