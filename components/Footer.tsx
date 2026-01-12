@@ -10,14 +10,11 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
           <div className="md:col-span-2">
-             <div className="flex items-center gap-1 mb-6">
-                <img src="https://i.imgur.com/ItoX9KK.png" alt="ALL VOLT" className="h-10 w-auto" />
-                <span className="font-sans text-xl tracking-tight text-white">
-                    <span className="font-light italic">ALL</span> <span className="font-bold">VOLT</span>
-                </span>
+             <div className="flex items-center gap-3 mb-6">
+                <img src="https://i.imgur.com/4SMTQ5h.png" alt="Eletroprime Logo" className="h-12 w-auto" />
              </div>
              <p className="text-gray-500 text-sm max-w-xs">
-               Serviços elétricos profissionais em São Paulo e região. Segurança, qualidade e garantia.
+               Serviços elétricos profissionais em São Paulo e região com o padrão de qualidade Eletroprime. Segurança, agilidade e garantia.
              </p>
           </div>
           
@@ -67,7 +64,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
         <div className="border-t border-white/5 pt-8 text-center text-xs text-gray-600">
-          © 2025 ALL VOLT. Todos os direitos reservados.
+          © 2025 Eletroprime. Todos os direitos reservados.
         </div>
       </div>
     </footer>

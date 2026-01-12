@@ -39,7 +39,7 @@ const App: React.FC = () => {
             { icon: <ShieldCheck size={16} />, text: 'Garantia real e orçamento simples via WhatsApp' }
           ]}
         >
-          {/* Image Replacement for Confusion vs Clarity - Removed inner borders/rounded since parent handles it now */}
+          {/* Image Replacement for Confusion vs Clarity */}
           <div className="relative w-full h-full">
              <img 
                src="https://i.imgur.com/ioHLRbt.png" 
@@ -52,7 +52,7 @@ const App: React.FC = () => {
 
         {/* 4) Como funciona / Método */}
         <FeatureSection
-          badge="Método ALL VOLT"
+          badge="Método Eletroprime"
           title="Como funciona"
           description="Formato: atendimento presencial em São Paulo e região, execução agendada ou emergencial."
           imageSide="left"
@@ -62,11 +62,11 @@ const App: React.FC = () => {
             { icon: <Check size={16} />, text: '3. Garantia + explicação do que foi feito' }
           ]}
         >
-           {/* Image Replacement for Workflow - Cleaned up classes */}
+           {/* Updated image to new URL */}
            <div className="relative w-full h-full">
               <img 
-                src="https://i.imgur.com/2r2CiCp.png" 
-                alt="Processo de atendimento ALL VOLT" 
+                src="https://i.imgur.com/WXwPIoT.png" 
+                alt="Processo de atendimento Eletroprime" 
                 className="absolute inset-0 w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700"
               />
            </div>
@@ -82,11 +82,11 @@ const App: React.FC = () => {
             { icon: <Check size={16} />, text: 'Para serviços complexos e de alto padrão' }
           ]}
         >
-           {/* Image Embedded in Glass Card - Cleaned up classes */}
+           {/* Updated image to new URL */}
            <div className="relative w-full h-full">
               <img 
-                src="https://i.imgur.com/3MJ7uXU.png" 
-                alt="Eletricista Profissional" 
+                src="https://i.imgur.com/JK1vIKh.png" 
+                alt="Eletricista Profissional Eletroprime" 
                 className="absolute inset-0 w-full h-full object-cover object-top opacity-80 hover:opacity-100 transition-opacity duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
@@ -105,7 +105,7 @@ const App: React.FC = () => {
 
         {/* 6) Oferta (With Image) */}
         <FeatureSection
-          title="Serviço Elétrico Profissional ALL VOLT"
+          title="Serviço Elétrico Profissional Eletroprime"
           description="Inclui: diagnóstico técnico completo, execução (instalação/manutenção/reparo), materiais adequados, acabamento profissional, garantia, suporte via WhatsApp e relatório simples quando necessário."
           imageSide="left"
           points={[
@@ -114,7 +114,7 @@ const App: React.FC = () => {
             { icon: <ShieldCheck size={16} />, text: 'Bônus: Garantia Estendida e Prioridade' }
           ]}
         >
-           {/* Image Embedded in Glass Card with Glowing Effect - Cleaned up classes */}
+           {/* Updated image to new URL */}
            <div className="relative w-full h-full group">
               <GlowingEffect
                 spread={40}
@@ -125,8 +125,8 @@ const App: React.FC = () => {
                 borderWidth={2}
               />
               <img 
-                src="https://i.imgur.com/Wh7vDQx.png" 
-                alt="Serviço Elétrico Profissional ALL VOLT" 
+                src="https://i.imgur.com/LfNmZs1.png" 
+                alt="Serviço Elétrico Profissional Eletroprime" 
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10"></div>

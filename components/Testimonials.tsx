@@ -12,7 +12,7 @@ const testimonials = [
     initial: "R"
   },
   {
-    text: "Estava com medo de contratar alguém sem referência, mas a ALL VOLT foi super profissional. Orçamento claro e sem surpresas.",
+    text: "Estava com medo de contratar alguém sem referência, mas a Eletroprime foi super profissional. Orçamento claro e sem surpresas.",
     author: "Fernanda Costa",
     role: "Jardins, SP",
     initial: "F"

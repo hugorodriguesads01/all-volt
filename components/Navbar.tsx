@@ -14,12 +14,9 @@ export const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-xl border-b border-white/10 supports-[backdrop-filter]:bg-black/20">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo - Icon + Typographic */}
-        <div className="flex items-center gap-1">
-          <img src="https://i.imgur.com/ItoX9KK.png" alt="ALL VOLT" className="h-9 w-auto" />
-          <span className="font-sans text-lg tracking-tight text-white">
-            <span className="font-light italic">ALL</span> <span className="font-bold">VOLT</span>
-          </span>
+        {/* Logo - Icon Only */}
+        <div className="flex items-center gap-3">
+          <img src="https://i.imgur.com/4SMTQ5h.png" alt="Eletroprime Logo" className="h-10 w-auto" />
         </div>
 
         {/* Desktop Links - Mono */}

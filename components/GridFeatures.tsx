@@ -54,15 +54,15 @@ export const GridFeatures: React.FC = () => {
 
   return (
     <section className="py-16 relative overflow-hidden bg-black">
-      {/* Background Image Layer - Optimized for visibility */}
+      {/* Background Image Layer - Updated to new URL */}
       <div className="absolute inset-0 z-0">
          <img 
-            src="https://i.imgur.com/eyDI4yu.png" 
-            alt="Eletricista Profissional no Painel" 
-            className="w-full h-full object-cover object-center opacity-60"
+            src="https://i.imgur.com/WXwPIoT.png" 
+            alt="Profissional Eletroprime" 
+            className="w-full h-full object-cover object-center opacity-40"
          />
-         {/* Gradient Shadow Significantly Reduced for better visibility */}
-         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90"></div>
+         {/* Gradient Shadow significantly covers for better text legibility */}
+         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -82,7 +82,7 @@ export const GridFeatures: React.FC = () => {
              transition={{ delay: 0.2 }}
              className="text-3xl md:text-5xl font-sans font-light text-white max-w-2xl mx-auto drop-shadow-md"
            >
-             Por que escolher a ALL VOLT?
+             Por que escolher a Eletroprime?
            </motion.h2>
         </div>
 
