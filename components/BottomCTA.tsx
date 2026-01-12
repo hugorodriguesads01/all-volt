@@ -13,8 +13,8 @@ export const BottomCTA: React.FC = () => {
               className="w-full h-full object-cover opacity-40 md:opacity-60"
               style={{ objectPosition: 'center' }}
           />
-          {/* Gradient Shadow adjusted for clarity - using darker background color for blending */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#242424]/90 via-[#242424]/20 to-[#242424]/90"></div>
+          {/* Gradient Shadow uses BLACK for clarity over image */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#242424]/90 via-black/20 to-[#242424]/90"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 flex justify-center">

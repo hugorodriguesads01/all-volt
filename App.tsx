@@ -46,7 +46,8 @@ const App: React.FC = () => {
                alt="Instalações elétricas mal feitas vs Solução Profissional" 
                className="absolute inset-0 w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700 hover:scale-105"
              />
-             <div className="absolute inset-0 bg-gradient-to-t from-[#242424]/60 via-transparent to-transparent pointer-events-none"></div>
+             {/* Using pure black for clarity instead of gray */}
+             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
           </div>
         </FeatureSection>
 
@@ -89,9 +90,10 @@ const App: React.FC = () => {
                 alt="Eletricista Profissional Eletroprime" 
                 className="absolute inset-0 w-full h-full object-cover object-top opacity-80 hover:opacity-100 transition-opacity duration-700 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#242424]/80 via-transparent to-transparent"></div>
+              {/* Using pure black for clarity instead of gray */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                 <div className="bg-[#242424]/60 backdrop-blur-md border border-white/10 p-4 rounded-xl">
+                 <div className="bg-black/60 backdrop-blur-md border border-white/10 p-4 rounded-xl">
                     <div className="flex items-center gap-3">
                       <div className="p-2 bg-green-500/20 rounded-full border border-green-500/30">
                         <ShieldCheck size={16} className="text-green-400" />
@@ -129,7 +131,8 @@ const App: React.FC = () => {
                 alt="Serviço Elétrico Profissional Eletroprime" 
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#242424]/90 via-[#242424]/40 to-[#242424]/10"></div>
+              {/* Using pure black for clarity instead of gray */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10"></div>
               
               {/* Overlay Content representing the Offer */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">

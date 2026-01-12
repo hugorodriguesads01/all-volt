@@ -54,15 +54,15 @@ export const GridFeatures: React.FC = () => {
 
   return (
     <section className="py-16 relative overflow-hidden bg-background">
-      {/* Background Image Layer - Updated to new URL */}
+      {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
          <img 
             src="https://i.imgur.com/WXwPIoT.png" 
             alt="Profissional Eletroprime" 
             className="w-full h-full object-cover object-center opacity-40"
          />
-         {/* Gradient Shadow significantly covers for better text legibility */}
-         <div className="absolute inset-0 bg-gradient-to-b from-[#242424]/80 via-[#242424]/40 to-[#242424]/90"></div>
+         {/* Gradient Shadow: Uses pure BLACK for clarity over image, blends to #242424 at bottom */}
+         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-[#242424]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">

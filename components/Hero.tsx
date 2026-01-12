@@ -13,9 +13,10 @@ export const Hero: React.FC = () => {
       <WebGLShader className="opacity-80" />
 
       {/* Static Overlay Layers (Gradient/Glow) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#242424]/10 to-[#242424] z-1 pointer-events-none"></div>
+      {/* Changed to transition to #242424 at the bottom to blend with content, but use black for clarity */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-[#242424] z-1 pointer-events-none"></div>
       
-      {/* Top ambient glow - Adjusted for new background */}
+      {/* Top ambient glow */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.3 }}
