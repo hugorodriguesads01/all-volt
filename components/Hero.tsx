@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
       <WebGLShader className="opacity-80" />
 
       {/* Static Overlay Layers (Gradient/Glow) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#030303]/10 to-[#030303] z-1 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#242424]/10 to-[#242424] z-1 pointer-events-none"></div>
       
       {/* Top ambient glow - Adjusted for new background */}
       <motion.div 
@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
         className="absolute top-0 left-0 w-full h-[600px] bg-hero-glow pointer-events-none z-1"
       ></motion.div>
 
-      <div className="relative max-w-4xl mx-auto px-6 text-center z-10">
+      <div className="relative max-w-[90rem] mx-auto px-6 text-center z-10">
         {/* Top Badges */}
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
@@ -42,16 +42,17 @@ export const Hero: React.FC = () => {
           </span>
         </motion.div>
 
-        {/* Headline */}
+        {/* Headline - Now with controlled line breaking to ensure exactly 2 lines on desktop */}
         <motion.h1 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="text-4xl md:text-6xl font-heading font-light tracking-tight text-white mb-6 leading-[1.1] drop-shadow-2xl"
+          className="text-4xl md:text-7xl font-heading font-light tracking-tight text-white mb-6 leading-[1.1] drop-shadow-2xl max-w-7xl mx-auto"
         >
-          Serviços elétricos com segurança, rapidez e
-          <span className="block font-normal text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-500">
-            profissionalismo de verdade.
+          <span className="inline-block md:whitespace-nowrap">Serviços elétricos com segurança</span>
+          <br className="hidden md:block" />
+          <span className="inline-block font-normal text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-500 md:whitespace-nowrap">
+            e profissionalismo de verdade.
           </span>
         </motion.h1>
 
@@ -60,7 +61,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-gray-400 text-sm md:text-base mb-10 max-w-2xl mx-auto leading-relaxed tracking-wide"
+          className="text-gray-400 text-sm md:text-base mb-10 max-w-2xl mx-auto leading-relaxed tracking-wide font-mono"
         >
           Diagnóstico claro via WhatsApp ou visita, execução profissional, sem risco, gambiarras ou dor de cabeça.
         </motion.p>
@@ -76,7 +77,7 @@ export const Hero: React.FC = () => {
             href="https://api.whatsapp.com/send/?phone=5511954608742&text&type=phone_number&app_absent=0&utm_source=ig"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative overflow-hidden bg-white hover:bg-white/90 text-black font-semibold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-white/20 text-sm w-full sm:w-auto hover:scale-105 active:scale-95 duration-200"
+            className="group relative overflow-hidden bg-white hover:bg-white/90 text-black font-semibold px-10 py-4 rounded-xl transition-all shadow-lg hover:shadow-white/20 text-sm w-full sm:w-auto hover:scale-105 active:scale-95 duration-200"
           >
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
                 <GlowingEffect

@@ -13,7 +13,7 @@ export const BottomCTA: React.FC = () => {
               className="w-full h-full object-cover opacity-60"
           />
           {/* Gradient Shadow adjusted for clarity (via-transparent) */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#242424]/80 via-transparent to-[#242424]/90"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">

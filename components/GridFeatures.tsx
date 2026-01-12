@@ -53,7 +53,7 @@ export const GridFeatures: React.FC = () => {
   };
 
   return (
-    <section className="py-16 relative overflow-hidden bg-black">
+    <section className="py-16 relative overflow-hidden bg-background">
       {/* Background Image Layer - Updated to new URL */}
       <div className="absolute inset-0 z-0">
          <img 
@@ -62,7 +62,7 @@ export const GridFeatures: React.FC = () => {
             className="w-full h-full object-cover object-center opacity-40"
          />
          {/* Gradient Shadow significantly covers for better text legibility */}
-         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90"></div>
+         <div className="absolute inset-0 bg-gradient-to-b from-[#242424]/80 via-[#242424]/40 to-[#242424]/90"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -97,7 +97,7 @@ export const GridFeatures: React.FC = () => {
             <motion.div 
               key={idx} 
               variants={itemVariant}
-              className="group relative rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:bg-black/60"
+              className="group relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:bg-white/10"
             >
               
               <GlowingEffect

@@ -27,7 +27,7 @@ const testimonials = [
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="py-16 bg-[#030303] relative overflow-hidden">
+    <section className="py-16 bg-background relative overflow-hidden">
       {/* Background removed as requested */}
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
