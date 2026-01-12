@@ -42,16 +42,16 @@ export const Hero: React.FC = () => {
           </span>
         </motion.div>
 
-        {/* Headline - Now with controlled line breaking to ensure exactly 2 lines on desktop */}
+        {/* Headline - Simplified structure for reliable breaking */}
         <motion.h1 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="text-4xl md:text-7xl font-heading font-light tracking-tight text-white mb-6 leading-[1.1] drop-shadow-2xl max-w-7xl mx-auto"
+          className="text-4xl md:text-7xl font-heading font-light tracking-tight text-white mb-6 leading-[1.1] drop-shadow-2xl max-w-screen-xl mx-auto"
         >
-          <span className="inline-block md:whitespace-nowrap">Serviços elétricos com segurança</span>
+          Serviços elétricos com segurança
           <br className="hidden md:block" />
-          <span className="inline-block font-normal text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-500 md:whitespace-nowrap">
+          <span className="font-normal text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-500">
             e profissionalismo de verdade.
           </span>
         </motion.h1>
